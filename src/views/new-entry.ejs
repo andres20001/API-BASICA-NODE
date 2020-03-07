@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<div class="col-md-6 offset-md-3">
+    <h2 class="text-center">Escriba Nueva Tarea</h2>
+
+    <form method="post" >
+        <div class="form-group">
+            <label for="Title">Titulo</label>
+            <input type="text" name="Titulo" id="title" class="form-control" 
+            placeholder="Nueva Tarea" required>
+        </div>
+
+        <div class="form-group">
+            <label for="body">Descripcion de Tarea</label>
+            <textarea name="Descripcion" id="descr" rows="1" class="form-control" placeholder="Descripcion"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Enviar Tarea" class="btn btn-primary">
+        </div>
+        
+    </form>
+</div>
+
+<%- include('partials/fooder') %>

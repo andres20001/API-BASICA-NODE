@@ -1,0 +1,25 @@
+
+<%- include('partials/header') %>
+
+<% if(entries.length) { %>
+
+    <div class="col-md-4 offset-md-4">
+        <%  entries.forEach(function (entry){ %>
+            <div class="card my-2">
+                <div class="card-header bg-primary text-white">
+                    <p><%= entry.H_Insertada %></p>
+                </div>
+                <br>
+                <div class="card-body">
+                    <h1><%= entry.titulo %></h1>
+                    <p><%= entry.Descripcion %></p>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+
+<% } else { %>
+    <p class="p-2">Hasta el momento no hay Tareas <a href="/new-entry">¿Quieres Agregar Una Tarea?</a></p>
+<% } %> 
+    
+<%- include('partials/fooder') %>
