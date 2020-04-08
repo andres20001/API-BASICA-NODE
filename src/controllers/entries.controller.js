@@ -12,7 +12,7 @@ const creatNewEntry = function(require, response){
     const newEntry = {
         titulo: require.body.Titulo,
         Descripcion: require.body.Descripcion,
-        H_Insertada: new Date()
+        H_Insertada: new Date(),
     };
     entries.push(newEntry);
 
